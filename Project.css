@@ -1,0 +1,369 @@
+/* Style the navigation links */
+
+.navbar-nav .nav-link {
+    color: white;
+    /* Text color for links */
+    font-size: 16px;
+    /* Font size for links */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    margin-right: 20px;
+    /* Add spacing between links */
+    transition: color 0.3s ease;
+    /* Add a smooth color transition on hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9900;
+    /* Change text color on hover */
+}
+
+
+/* Style the toggle button */
+
+.navbar-toggler-icon {
+    background-color: white;
+    /* Color of the toggle button icon */
+}
+
+
+/* Style the search input and button */
+
+.form-control {
+    background-color: #555;
+    /* Input background color */
+    color: white;
+    /* Input text color */
+    border: none;
+    /* Remove input border */
+}
+
+.btn-outline-success {
+    background-color: #ff9900;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border-color: #ff9900;
+    /* Button border color */
+}
+
+.btn-outline-success:hover {
+    background-color: #fff;
+    /* Change button background color on hover */
+    color: #333;
+    /* Change button text color on hover */
+}
+
+.Left {
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.navbar-brand {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#myVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 75%;
+    border: #ff9900;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    border: solid transparent;
+    background: url('Norte.png');
+    background-size: contain;
+    /* Use 'contain' to maintain aspect ratio */
+    margin: 0 auto;
+    /* Center horizontally */
+    transition: transform 0.3s ease-in-out;
+}
+
+.img1:hover {
+    transform: scale(1.05);
+    /* Scale the image slightly on hover */
+}
+
+.img2 {
+    max-width: 100%;
+    height: auto;
+    border: solid transparent;
+    background: url('Pagkain.png');
+    background-size: cover;
+    /* Use 'contain' to maintain aspect ratio */
+    margin: 0 auto;
+    /* Center horizontally */
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 38%;
+}
+
+.img2:hover {
+    transform: scale(1.05);
+    /* Scale the image slightly on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .img2 {
+        display: none;
+        /* Hide the element on mobile screens */
+    }
+}
+
+.Featured {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 255%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    /* Adjust the top value as needed to position it vertically */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* Make it full-width */
+}
+
+.Experience {
+    font-size: 18px;
+    z-index: -1;
+}
+
+.Ldown {
+    text-align: center;
+    color: white;
+    font-family: joebert;
+    font-size: 25%;
+    margin-top: 10px;
+}
+
+.B1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 2px;
+}
+
+.B2 {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .B2 {
+        display: none;
+        /* Hide the element on mobile screens */
+    }
+}
+
+.GAL1 {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    background-color: transparent;
+}
+
+.GAL1:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Right {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .Right {
+        display: none;
+        /* Hide the element on mobile screens */
+    }
+}
+
+
+/* hover Button */
+
+.hover-button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.hover-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Semi-transparent white on hover */
+}
+
+
+/* NAVBAR ONLY */
+
+.navbar {
+    background-color: #333;
+    /* Change to your desired background color */
+    color: white;
+    /* Change text color to contrast with background */
+    border-bottom: 3px solid #ff9900;
+    /* Add a bottom border for a cool effect */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Add boldness */
+    letter-spacing: 2px;
+    /* Add letter spacing */
+}
+
+
+/* Style for the gallery container */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid with a minimum column width */
+    gap: 20px;
+    /* Adjust the gap between images */
+    padding: 20px;
+    /* Add padding around the gallery */
+}
+
+
+/* GALLERY VIGAN */
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid orange;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+/* Hover effect for gallery images */
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
+}
+
+
+/* Center the gallery on the page */
+
+.gallery-item {
+    flex: 1;
+    /* Equal width for all items */
+    padding: 10px;
+    /* Add some spacing between images */
+}
+
+.gallery-container {
+    max-width: 1200px;
+    /* Set a maximum width for the gallery container */
+    margin: 0 auto;
+    /* Center the gallery horizontally */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 5vh;
+}
+
+
+/* Style for the footer */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    height: fit-content;
+}
+
+
+/* Style for the footer headings */
+
+.footer h3 {
+    font-size: 24px;
+}
+
+
+/* Style for the footer links */
+
+.footer a {
+    color: #ff9900;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+/* Style for the newsletter form */
+
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #fff;
+    color: #333;
+}
